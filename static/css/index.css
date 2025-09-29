@@ -93,6 +93,77 @@ body {
   /*color: #4286f4;*/
 }
 
+/* Enhanced Authors Section Styling */
+.authors-section {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.authors-list {
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.authors-list a {
+  color: hsl(204, 86%, 53%) !important;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  padding: 0.2rem 0.4rem;
+  border-radius: 6px;
+  display: inline-block;
+}
+
+.authors-list a:hover {
+  text-decoration: underline;
+}
+
+.authors-list sup {
+  font-size: 0.7em;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.affiliations-list {
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  opacity: 0.9;
+}
+
+.affiliations-list sup {
+  font-size: 0.8em;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+/* Mobile responsiveness for authors */
+@media (max-width: 768px) {
+  .authors-list {
+    font-size: 1.4rem;
+    line-height: 1.5;
+  }
+  
+  .affiliations-list {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .authors-list {
+    font-size: 1.2rem;
+    line-height: 1.4;
+  }
+  
+  .affiliations-list {
+    font-size: 0.9rem;
+  }
+}
+
 .publication-video {
     position: relative;
     width: 95%;
