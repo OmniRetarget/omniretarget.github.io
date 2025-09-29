@@ -25,90 +25,117 @@
 
 <body>
 
-  <section class="hero is-link is-fullheight video" style="overflow: hidden; position:relative;">
-    <div class="hero-video" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 101%; height: 101%;">
-      <video playsinline autoplay muted loop style="width: 100%; height: 100%; object-fit: cover;">
-        <source src=" ./static/website_videos/flagship.mp4" type="video/mp4">
-      </video>
-    </div>
-    <div class="hero-video is-hidden-tablet is-inline-block-mobile"
-      style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 101%; height: 101%;">
-      <video playsinline autoplay muted loop style="width: 100%; height: 100%; object-fit: cover;">
-        <source src=" ./static/website_videos/flagship.mp4" type="video/mp4">
-      </video>
-    </div>
-    <div class="overlay"></div>
-    
-    <!-- <div style="position: absolute; bottom: 20px; right: 20px; color: white; padding: 10px 15px; border-radius: 8px; font-size: 0.9rem; max-width: 380px; z-index: 10; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);">
-      <div style="margin-bottom: 5px;"><sup>*</sup> Equal contribution; order decided by coin toss.</div>
-      <div><sup>†</sup> Equal advising; order mirrors the coin toss, with the other lab listed last.</div>
-    </div> -->
-  
-  <div class="hero-head is-hidden-mobile">
-    <header class="navbar">
-      <div class="container is-size-5">
-        <div class="navbar-menu">
-          <div class="navbar-end">
-            <a href="./static/images/paper.pdf" class="navbar-item pl-4 pr-4" style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);">
-              <span class="icon" style="margin-right:5px;">
-                <i class="ai ai-arxiv"></i>
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-fullhd">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title" style="font-size: 4rem;">OmniRetarget</h1>
+            <h2 class="subtitle is-2 publication-title" style="font-size: 3rem;">Interaction-Preserving Data Generation for Humanoid Whole-Body Loco-Manipulation and Scene Interaction</h2>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                <a target="_blank" href="https://lujieyang.github.io/">Lujie Yang<sup>*</sup></a><sup>1,2</sup>,
               </span>
-              <span>arXiv</span>
-            </a>
-            <a href="https://youtu.be/xGNN4soesag" class="navbar-item pl-4 pr-4" style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);">
-              <span class="icon" style="margin-right:5px;">
-                <i class="fab fa-youtube"></i>
+              <span class="author-block">
+                <a target="_blank" href="https://scholar.google.com/citations?user=G-x_szsAAAAJ&hl=en">Xiaoyu Huang<sup>*</sup></a><sup>1,3</sup>,
               </span>
-              <span>Video</span>
-            </a>
-            <a class="navbar-item pl-4 pr-4" href="https://huggingface.co/datasets/omniretarget/OmniRetarget_Dataset" style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);">
-              <span class="icon" style="margin-right:5px;">
-                <i class="fab fa-github-alt"></i>
+              <span class="author-block">
+                <a target="_blank" href="https://www.linkedin.com/in/zhen-wu-326a70230/">Zhen Wu<sup>*</sup></a><sup>1</sup>,
               </span>
-              <span>Dataset</span>
-            </a>
-            <span class="navbar-item  pl-4 pr-4">
-              <a href="https://github.com/HybridRobotics/whole_body_tracking" class="button is-inverted is-large">
-                <span class="icon">
-                  <i class="fab fa-github"></i>
+              <br>
+              <span class="author-block">
+                <a target="_blank" href="https://people.eecs.berkeley.edu/~kanazawa/">Angjoo Kanazawa<sup>†</sup></a><sup>1,3</sup>,
+              </span>
+              <span class="author-block">
+                <a target="_blank" href="https://people.eecs.berkeley.edu/~pabbeel/">Pieter Abbeel<sup>†</sup></a><sup>1,3</sup>,
+              </span>
+              <span class="author-block">
+                <a target="_blank" href="https://sferrazza.cc/">Carmelo Sferrazza<sup>†</sup></a><sup>1</sup>,
+              </span>
+              <span class="author-block">
+                <a target="_blank" href="https://tml.stanford.edu/people/karen-liu">C. Karen Liu<sup>†</sup></a><sup>1,4</sup>,
+              </span>
+              <span class="author-block">
+                <a target="_blank" href="http://rockyduan.com/">Rocky Duan<sup>†</sup></a><sup>1</sup>,
+              </span>
+              <span class="author-block">
+                <a target="_blank" href="https://www.gshi.me/">Guanya Shi<sup>†</sup></a><sup>1,5</sup>
+              </span>
+            </div>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block"><sup>1</sup>Amazon FAR (Frontier AI & Robotics),</span>
+              <span class="author-block"><sup>2</sup>MIT,</span>
+              <span class="author-block"><sup>3</sup>UC Berkeley,</span>
+              <span class="author-block"><sup>4</sup>Stanford University,</span>
+              <span class="author-block"><sup>5</sup>CMU</span>
+            </div>
+
+            <div class="is-size-6" style="margin-top: 0.5rem; font-style: italic;">
+              <sup>*</sup> Equal contribution, work done while interning at Amazon FAR. <sup>†</sup> Amazon FAR team co-lead.
+            </div>
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <!-- PDF Link. -->
+                <span class="link-block">
+                  <a target="_blank" href="./static/images/paper.pdf"
+                     class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Paper</span>
+                  </a>
                 </span>
-                <span>Code</span>
-              </a>
-            </span>
+
+              <!-- Video Link. -->
+              <span class="link-block">
+                <a target="_blank" href="https://youtu.be/xGNN4soesag"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span>
+
+              <!-- Dataset Link. -->
+              <span class="link-block">
+                <a target="_blank" href="https://huggingface.co/datasets/omniretarget/OmniRetarget_Dataset"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github-alt"></i>
+                  </span>
+                  <span>Dataset</span>
+                  </a>
+              </span>
+
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a target="_blank" href="https://omniretarget.github.io/"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code (Coming Soon)</span>
+                  </a>
+              </span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </header>
-  </div>
+    </div>
+  </section>
 
-  <div class="hero-body">
-    <div class="container has-text-centered">
-      <h1 class="title is-1 publication-title is-size-1-mobile" style="font-size: 7rem; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);">
-        OmniRetarget
-      </h1>
-      <h1 class="subtitle is-1 publication-title is-size-4-mobile" style="font-size: 3rem; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);">
-        Interaction-Preserving Data Generation for Humanoid Whole-Body Loco-Manipulation and Scene Interaction
-      </h1>
-      <div class="authors-section">
-        <div class="authors-list">
-          <span class="author-block"><a href="https://lujieyang.github.io/">Lujie Yang<sup>*</sup></a><sup>1,2</sup></span>,
-          <a href="https://scholar.google.com/citations?user=G-x_szsAAAAJ&hl=en">Xiaoyu Huang<sup>*</sup></a><sup>1,3</sup>,
-          <a href="https://www.linkedin.com/in/zhen-wu-326a70230/">Zhen Wu<sup>*</sup></a><sup>1</sup>,
-          <br>
-          <a href="https://people.eecs.berkeley.edu/~kanazawa/">Angjoo Kanazawa<sup>†</sup></a><sup>1,3</sup>,
-          <a href="https://people.eecs.berkeley.edu/~pabbeel/">Pieter Abbeel<sup>†</sup></a><sup>1,3</sup>,
-          <a href="https://sferrazza.cc/">Carmelo Sferrazza<sup>†</sup></a><sup>1</sup>,
-          <a href="https://tml.stanford.edu/people/karen-liu">C. Karen Liu<sup>†</sup></a><sup>1,4</sup>,
-          <a href="http://rockyduan.com/">Rocky Duan<sup>†</sup></a><sup>1</sup>,
-          <a href="https://www.gshi.me/">Guanya Shi<sup>†</sup></a><sup>1,5</sup>
-        </div>
-        <div class="affiliations-list">
-          <sup>1</sup>Amazon FAR (Frontier AI & Robotics), <sup>2</sup>MIT, <sup>3</sup>UC Berkeley, <sup>4</sup>Stanford University, <sup>5</sup>CMU
-        </div>
-      </div>
+<section class="section" style="padding-top: 0rem; padding-bottom: 0rem;">
+  <div class="container">
+    <div class="has-text-centered">
+      <video autoplay loop muted playsinline style="width: 100%; max-width: 1000px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);">
+        <source src="./static/website_videos/flagship.mp4" type="video/mp4">
+      </video>
     </div>
   </div>
-
 </section>
 
 <section class="section">
