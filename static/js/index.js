@@ -21,6 +21,12 @@ function setInterpolationImage(i) {
 
 
 $(document).ready(function() {
+    // Remove interactive demo section on mobile devices to prevent loading
+    if (window.innerWidth <= 768) {
+        $('.interactive-demo-section').remove();
+        console.log('Interactive demo removed on mobile device');
+    }
+
     // Check for click events on the navbar burger icon
     $(".navbar-burger").click(function() {
       // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"

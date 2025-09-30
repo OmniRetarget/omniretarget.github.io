@@ -1398,3 +1398,10 @@ body {
   }
 }
 
+/* Hide interactive demo on mobile devices */
+@media screen and (max-width: 768px) {
+  .interactive-demo-section {
+    display: none !important;
+  }
+}
+
