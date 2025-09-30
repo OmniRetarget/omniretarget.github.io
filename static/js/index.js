@@ -38,12 +38,11 @@ $(document).ready(function() {
                 $(this).removeAttr('autoplay');
                 $(this).removeAttr('loop');
                 $(this).attr('loading', 'lazy');
-                $(this).attr('preload', 'metadata');
                 // Pause any videos that may have already started
                 this.pause();
             }
         });
-        console.log('Video autoplay and loop removed on mobile device (except flagship, roll, and climb_4)');
+        console.log('Video autoplay and loop removed on mobile device (except flagship, roll, and box_1)');
         console.log('Lazy loading added to all videos on mobile device');
     }
 
