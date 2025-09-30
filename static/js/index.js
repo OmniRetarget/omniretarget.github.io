@@ -25,6 +25,25 @@ $(document).ready(function() {
     if (window.innerWidth <= 768) {
         $('.interactive-demo-section').remove();
         console.log('Interactive demo removed on mobile device');
+        
+        // Remove autoplay and loop from all videos on mobile (except flagship, roll, and climb_4)
+        // Also add lazy loading to all videos
+        $('video').each(function() {
+            var videoSrc = $(this).attr('src') || $(this).find('source').attr('src') || '';
+            var isFlagship = videoSrc.includes('flagship');
+            var isRoll = videoSrc.includes('roll');
+            var isClimb4 = videoSrc.includes('climb_4');
+            
+            if (!isFlagship && !isRoll && !isClimb4) {
+                $(this).removeAttr('autoplay');
+                $(this).removeAttr('loop');
+                $(this).attr('loading', 'lazy');
+                // Pause any videos that may have already started
+                this.pause();
+            }
+        });
+        console.log('Video autoplay and loop removed on mobile device (except flagship, roll, and climb_4)');
+        console.log('Lazy loading added to all videos on mobile device');
     }
 
     // Check for click events on the navbar burger icon
