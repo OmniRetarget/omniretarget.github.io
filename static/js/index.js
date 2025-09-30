@@ -38,7 +38,7 @@ $(document).ready(function() {
 			autoplaySpeed: 3000,
     }
 
-		// Initialize all div with carousel class
+		// Initialize all div with carousel class (including mobile carousels)
     var carousels = bulmaCarousel.attach('.carousel', options);
 
     // Loop on each carousel initialized
