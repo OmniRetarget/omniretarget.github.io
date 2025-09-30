@@ -32,12 +32,13 @@ $(document).ready(function() {
             var videoSrc = $(this).attr('src') || $(this).find('source').attr('src') || '';
             var isFlagship = videoSrc.includes('flagship');
             var isRoll = videoSrc.includes('roll');
-            var isClimb4 = videoSrc.includes('climb_4');
+            var isBox1 = videoSrc.includes('box_1');
             
-            if (!isFlagship && !isRoll && !isClimb4) {
+            if (!isFlagship && !isRoll && !isBox1) {
                 $(this).removeAttr('autoplay');
                 $(this).removeAttr('loop');
                 $(this).attr('loading', 'lazy');
+                $(this).attr('preload', 'metadata');
                 // Pause any videos that may have already started
                 this.pause();
             }
