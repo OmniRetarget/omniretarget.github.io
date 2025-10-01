@@ -1405,3 +1405,20 @@ body {
   }
 }
 
+/* Flagship video captions: keep readable width and spacing */
+.flagship-caption {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .flagship-caption {
+    text-align: left;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
